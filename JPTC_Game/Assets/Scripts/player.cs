@@ -10,10 +10,14 @@ public class player : MonoBehaviour
         
     }
     public float velocity = 1.0f;
+    public float velocity_R_L = 2.0f;
+    public FixedJoystick joystick;
+
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(velocity * Time.deltaTime, 0, 0);
+        // velocity * Time.deltaTime *
+        transform.position += new Vector3( velocity * Time.deltaTime , 0, - (joystick.Direction.x * velocity_R_L * Time.deltaTime));
         
     }
 }
