@@ -14,9 +14,9 @@ public class triger : MonoBehaviour
     
     private void OnTriggerEnter(Collider other) {
         // print("Collider + " + other.gameObject.name);
-        if (other.gameObject.name.Equals("Cube")){
+        if (other.gameObject.name.Equals("Player")){
             print("Collider + " + other.gameObject.name);
-            doorAnimator.SetBool("StarDoorAnim", true);
+            doorAnimator.SetBool("door_open", true);
         }
     }
     
