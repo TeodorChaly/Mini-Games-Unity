@@ -363,6 +363,7 @@
 "Assets/Scripts/Damage.cs"
 "Assets/Scripts/Health.cs"
 "Assets/Scripts/player.cs"
+"Assets/Scripts/StartGame.cs"
 "Assets/Scripts/triger.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
