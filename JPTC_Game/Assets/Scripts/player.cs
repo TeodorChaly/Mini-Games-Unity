@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
@@ -29,5 +30,11 @@ public class player : MonoBehaviour
         life += points;
         print("Current life:" + life);
         life_text.text = life.ToString(); 
+        isAlive();
+    }
+    private void isAlive(){
+        if(life <= 0){
+                SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+        }
     }
 }

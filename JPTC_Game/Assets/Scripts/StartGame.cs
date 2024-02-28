@@ -4,8 +4,9 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
-    public void onClickStart()
+    public string loadScene = "";
+    public void onClick()
     {
-        SceneManager.LoadScene("SampleScene", LoadSceneMode.Single);
+        SceneManager.LoadScene(loadScene, LoadSceneMode.Single);
     }
 }

@@ -648,6 +648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3eeedc816db0d49a0b1d613863a216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  loadScene: SampleScene
 --- !u!114 &1324541969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,7 +695,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1324541968}
         m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
-        m_MethodName: onClickStart
+        m_MethodName: onClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

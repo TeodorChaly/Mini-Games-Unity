@@ -361,6 +361,7 @@
 "Assets/Joystick Pack/Scripts/Joysticks/VariableJoystick.cs"
 "Assets/mergercube.cs"
 "Assets/Scripts/Damage.cs"
+"Assets/Scripts/FPSCounter.cs"
 "Assets/Scripts/Health.cs"
 "Assets/Scripts/player.cs"
 "Assets/Scripts/StartGame.cs"
