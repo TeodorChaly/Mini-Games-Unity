@@ -363,6 +363,7 @@
 "Assets/Scripts/Damage.cs"
 "Assets/Scripts/FPSCounter.cs"
 "Assets/Scripts/Health.cs"
+"Assets/Scripts/Jump.cs"
 "Assets/Scripts/player.cs"
 "Assets/Scripts/StartGame.cs"
 "Assets/Scripts/triger.cs"

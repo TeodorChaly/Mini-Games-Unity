@@ -23,8 +23,11 @@ public class player : MonoBehaviour
     void Update()
     {
         // velocity * Time.deltaTime *
-        transform.position += new Vector3( velocity * Time.deltaTime , 0, - (joystick.Direction.x * velocity_R_L * Time.deltaTime));
-        
+        if (joystick.Direction.y >= 0){
+            transform.position += new Vector3( velocity * Time.deltaTime - (joystick.Direction.y * velocity_R_L * Time.deltaTime), 0, - (joystick.Direction.x * velocity_R_L * Time.deltaTime));
+        } else{
+            transform.position += new Vector3((joystick.Direction.y * velocity_R_L * Time.deltaTime), 0, - (joystick.Direction.x * velocity_R_L * Time.deltaTime));
+        }
     }
     public void updateLife(int points){
         life += points;
@@ -32,6 +35,7 @@ public class player : MonoBehaviour
         life_text.text = life.ToString(); 
         isAlive();
     }
+    
     private void isAlive(){
         if(life <= 0){
                 SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
