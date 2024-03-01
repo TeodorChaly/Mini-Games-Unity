@@ -7,7 +7,6 @@ using UnityEngine.SceneManagement;
 
 public class player : MonoBehaviour
 {
-    // Start is called before the first frame update
     void Start()
     {
         print("Start life:" + life);
@@ -19,10 +18,8 @@ public class player : MonoBehaviour
     private int life = 100;
     public TextMeshProUGUI  life_text;
 
-    // Update is called once per frame
     void Update()
     {
-        // velocity * Time.deltaTime *
         if (joystick.Direction.y >= 0){
             transform.position += new Vector3( velocity * Time.deltaTime - (joystick.Direction.y * velocity_R_L * Time.deltaTime), 0, - (joystick.Direction.x * velocity_R_L * Time.deltaTime));
         } else{
