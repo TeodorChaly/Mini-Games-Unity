@@ -1,1 +1,1 @@
-Mini games
+Mini games.
