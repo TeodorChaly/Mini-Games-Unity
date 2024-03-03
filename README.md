@@ -1,2 +1,2 @@
 Mini games.
-1. Starter project
+1. Starter project.
